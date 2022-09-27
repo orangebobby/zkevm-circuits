@@ -37,7 +37,5 @@ state_bench: ## Run State Circuit benchmarks
 keccak_round_bench: ## Run State Circuit benchmarks
 	@cargo test --profile bench bench_keccak_round -p circuit-benchmarks --features benches  -- --nocapture
 
-circuit_benches: evm_bench state_bench ## Run All Circuit benchmarks
-
 
 .PHONY: clippy doc fmt test test_benches test-all evm_bench state_bench circuit_benches help
